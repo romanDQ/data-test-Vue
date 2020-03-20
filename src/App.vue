@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Table />
+    <Tabulka class="tabulka"/>
+    <Graf/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Table from './components/Table.vue'
+import Tabulka from './components/Tabulka.vue'
+import Graf from './components/Graf'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Table,
+    Tabulka,
+    Graf,
   }
 }
 </script>
@@ -24,5 +29,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.tabulka{
+  margin: 30px;
 }
 </style>
