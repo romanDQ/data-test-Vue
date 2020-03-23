@@ -1,8 +1,14 @@
 <template>
+
   <div id="app">
+    <div>
+      <Header/>
+    </div>
     <Table />
     <Tabulka class="tabulka"/>
     <Graf/>
+   
+   
   </div>
 </template>
 
@@ -10,6 +16,7 @@
 import Table from './components/Table.vue'
 import Tabulka from './components/Tabulka.vue'
 import Graf from './components/Graf'
+import Header from './components/Header'
 
 export default {
   name: 'App',
@@ -17,6 +24,7 @@ export default {
     Table,
     Tabulka,
     Graf,
+    Header
   }
 }
 </script>
@@ -34,4 +42,6 @@ export default {
 .tabulka{
   margin: 30px;
 }
+
+
 </style>
